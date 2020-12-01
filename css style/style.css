@@ -1,0 +1,158 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #204f87;
+    font-size: 16px;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #F15C2A;
+    border-bottom: 2px solid #F15C2A;
+}
+.banner{
+    background-image: url(../Images/head-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.height{
+    min-height: 90vh;
+    align-items: center;
+    position: relative;
+
+}
+.banner h1{
+    
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.icon{
+    
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -70%);
+    animation: ani 2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes ani{
+    o% {
+        top: 75%;
+    }
+    100%{
+        top: 80%;
+    }
+
+}
+.who-we-are{
+
+}
+.who-we-are h1, .what-we-do h1{
+
+    color: #204f87;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+   
+}
+.who-we-are p{
+    
+    color: #b0b0b1;
+    font-size: 15px;
+}
+.who-we-are span{
+    
+    display: block;
+    background-color: #f05428;
+    width: 0px;
+    height: 5px;
+    border-radius: 9px;
+    transition: .4s all ease-in-out;
+}
+.who-we-are:hover span {
+    width: 50px;
+
+}
+.what-we-do{
+    background-color:#f8f8f8 ;
+
+}
+.what-we-do h1{
+    
+
+}
+.what-we-do span{
+    display: inline-block;
+    background-color: #f05428;
+    width: 0px;
+    height: 5px;
+    border-radius: 9px;
+    position: absolute;
+    left: 487px;
+    transition: .4s all ease-in-out;
+    bottom: 50px;
+}
+.what-we-do:hover span {
+    width: 50px;
+}
+.we-do{
+    position: relative;
+    
+
+}
+.we-do::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 00%;
+    width: 100%;
+    transition: .4s all ease-in-out;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#353889+0,353889+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(53,56,137,0) 0%, rgba(53,56,137,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(53,56,137,0) 0%,rgba(53,56,137,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(53,56,137,0) 0%,rgba(53,56,137,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00353889', endColorstr='#353889',GradientType=0 ); /* IE6-9 */
+
+}
+.we-do:hover::before{
+    height: 100%;
+
+}
+.txt {
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.txt h1{
+    
+    color: #fff;
+    font-size: 20px;
+}
+.we-do:hover .txt{
+    
+    opacity: 1;
+    top: 50%;
+}
+.icon-right{
+
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    transform: translate(-50%, -85%);
+    color: #fff;
+    font-size: 30px;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.we-do:hover .icon-right{
+    opacity: 1;
+    left: 50%;
+}
